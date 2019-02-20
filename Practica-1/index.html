@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Musicalia</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("imagenes/fondo_concierto.jpg");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  background-image: linear-gradient(black, white);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  background-color: #cccccc;
+  background-image: url("imagenes/fondo.jpg");
+  color: white;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+div.gallery{
+  position: relative;
+  top: -60px; /* ajustar los valores para mover la imagen */
+  left: 7px;
+
+  height: 300px;
+  border-radius: 50%;
+  margin: 5%;
+
+
+
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 200;
+}
+
+div.desc {
+  width: 150px;
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+
+<div class="content">
+  <a href="index.html">
+    <center>
+      <img src="imagenes/logo.jpg" alt="logo" style="width:500px; height:90px; margin:2%" align="middle">
+    </center>
+  </a>
+</div>
+
+<div class="topnav">
+  <a href="guitarras-y-bajos.html">Guitarras y Bajos</a>
+  <a href="baterias.html">Baterías</a>
+  <a href="teclados.html">Teclados</a>
+  <a href="accesorios.html">Accesorios</a>
+  <a href="altavoces.html">Altavoces</a>
+</div>
+
+<div class="gallery">
+  <img src="imagenes/guitarras/strato.jpg" alt="strato" style="width:150px">
+  <div class="desc">Guitarras y Bajos</div>
+</div>
+<div class="gallery">
+  <img src="imagenes/baterias/bateria.jpg" alt="bateria" style="width:150px">
+  <div class="desc">Baterias</div>
+</div>
+<div class="gallery">
+  <img src="imagenes/teclados/teclado.jpg" alt="teclado" style="width:150px">
+  <div class="desc">Teclados</div>
+</div>
+
+
+
+
+</body>
+</html>
