@@ -4,7 +4,7 @@ from django.template.loader import get_template
 from django.template import Template, Context
 
 def index(request):
-    t = get_template('main.html')
+    t = get_template('index.html')
     c = {'user': 'Obijuan'}
     html = t.render(c)
     return HttpResponse(html)
