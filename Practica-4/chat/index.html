@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MI CHAT</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat-client.js"></script>
+    <style media="screen">
+
+      body{
+        background-color: #E5EAE6;
+      }
+      .content {
+        background-color: #0C6322;
+        color: white;
+        padding: 10px;
+        height: 150px; /* Should be removed. Only for demonstration */
+        position: relative;
+      }
+      .box {
+        background-color: white;
+        width: absolute;
+        height: 100%;
+        border: 2px solid black;
+
+        margin: 75px;
+        position: absolute;
+
+        right: 10px;
+        left: 10px;
+        top: 160px;
+
+      }
+      .content input {
+        left: 500px;
+
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 27px;
+      }
+
+    </style>
+  </head>
+  <body onload="main();">
+    <div class="content">
+      <p id="person"></p>
+      <input id="msg" autocomplete="off" />
+      <button type="button" id="send">Enviar</button>
+    </div>
+
+    <div class="box">
+
+      <p id="display">
+        <br>
+      </p>
+
+    </div>
+
+  </body>
+</html>

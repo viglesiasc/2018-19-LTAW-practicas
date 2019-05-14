@@ -1,0 +1,33 @@
+body{
+  background-color: #E5EAE6;
+}
+.content {
+  background-color: #0C6322;
+  color: white;
+  padding: 10px;
+  height: 150px; /* Should be removed. Only for demonstration */
+  position: relative;
+}
+.box {
+  background-color: white;
+  width: absolute;
+  height: 100%;
+  border: 2px solid black;
+
+  margin: 75px;
+  position: absolute;
+
+  right: 10px;
+  left: 10px;
+  top: 160px;
+
+}
+.content input {
+  left: 500px;
+
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 27px;
+}
