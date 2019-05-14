@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>La Tienda de Música</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'css/css_index.css' %}" />
+
+</head>
+<body>
+
+
+<div class="content">
+  <a href="">
+    <center>
+      <img src="/static/imagenes/logo.jpg" alt="logo" style="width:500px; height:90px; margin:2% align=middle">
+    </center>
+  </a>
+</div>
+
+<div class="topnav">
+  <a href="">Guitarras y Bajos</a>
+  <a href="">Baterías</a>
+  <a href="">Teclados</a>
+  <a href="">Accesorios</a>
+  <a href="">Altavoces</a>
+  <input type="text" placeholder="Search..">
+</div>
+
+<a href="{% static 'guitarra.html' %}">
+  <div class="gallery">
+    <img src="/static/imagenes/guitarras/strato.jpg" alt="strato" >
+    <div class="desc">Guitarras y Bajos</div>
+  </div>
+</a>
+
+<a href="{% static 'bateria.html' %}">
+  <div class="gallery">
+    <img src="/static/imagenes/baterias/bateria.jpg" alt="bateria" >
+    <div class="desc">Baterias</div>
+  </div>
+</a>
+
+<a href="{% static 'teclado.html' %}">
+  <div class="gallery">
+    <img src="/static/imagenes/teclados/teclado.jpg" alt="teclado">
+    <div class="desc">Teclados</div>
+  </div>
+</a>
+
+
+
+</body>
+</html>
